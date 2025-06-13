@@ -1,0 +1,3 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 110 ns : File "C:/harman_verilog/0411_RISC_V_ALL/0411_RISC_V_ALL.srcs/sim_1/imports/Downloads/tb_RV32I1.sv" Line 15
