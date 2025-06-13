@@ -1,0 +1,6 @@
+/*AXI4_LITE_I2C_PERIPH_wrapper*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

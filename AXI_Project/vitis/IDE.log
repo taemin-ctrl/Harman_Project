@@ -1,0 +1,293 @@
+15:03:15 INFO  : Registering command handlers for Vitis TCF services
+15:03:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\temp_xsdb_launch_script.tcl
+15:03:23 INFO  : XSCT server has started successfully.
+15:03:25 INFO  : Platform repository initialization has completed.
+15:03:31 INFO  : Successfully done setting XSCT server connection channel  
+15:03:31 INFO  : plnx-install-location is set to ''
+15:03:31 INFO  : Successfully done query RDI_DATADIR 
+15:03:31 INFO  : Successfully done setting workspace for the tool. 
+15:04:12 INFO  : Result from executing command 'getProjects': AXI4_LITE_I2C_PERIPH_wrapper
+15:04:12 INFO  : Result from executing command 'getPlatforms': 
+15:04:12 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:04:13 INFO  : Platform 'AXI4_LITE_I2C_PERIPH_wrapper' is added to custom repositories.
+15:04:25 INFO  : Platform 'AXI4_LITE_I2C_PERIPH_wrapper' is added to custom repositories.
+15:05:37 INFO  : Result from executing command 'getProjects': AXI4_LITE_I2C_PERIPH_wrapper
+15:05:37 INFO  : Result from executing command 'getPlatforms': AXI4_LITE_I2C_PERIPH_wrapper|C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/AXI4_LITE_I2C_PERIPH_wrapper.xpfm
+15:05:37 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+15:06:00 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+15:07:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:17 INFO  : Jtag cable 'Digilent Basys3 210183BB7AB8A' is selected.
+15:07:17 INFO  : 'jtag frequency' command is executed.
+15:07:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}' command is executed.
+15:07:19 INFO  : Device configured successfully with "C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit"
+15:07:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:07:19 INFO  : Hardware design and registers information is loaded from 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa'.
+15:07:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:07:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:07:19 INFO  : System reset is completed.
+15:07:22 INFO  : 'after 3000' command is executed.
+15:07:22 INFO  : Context for processor 'microblaze_0' is selected.
+15:07:22 INFO  : The application 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf' is downloaded to processor 'microblaze_0'.
+15:07:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}
+fpga -file C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf
+----------------End of Script----------------
+
+15:07:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:07:23 INFO  : 'con' command is executed.
+15:07:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:07:23 INFO  : Launch script is exported to file 'C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\AXI4_LITE_I2C_PERIPH_system\_ide\scripts\systemdebugger_axi4_lite_i2c_periph_system_standalone.tcl'
+15:11:23 INFO  : Disconnected from the channel tcfchan#2.
+15:11:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:11:23 INFO  : Jtag cable 'Digilent Basys3 210183BB7AB8A' is selected.
+15:11:23 INFO  : 'jtag frequency' command is executed.
+15:11:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}' command is executed.
+15:11:25 INFO  : Device configured successfully with "C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit"
+15:11:25 INFO  : Context for processor 'microblaze_0' is selected.
+15:11:25 INFO  : Hardware design and registers information is loaded from 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa'.
+15:11:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:11:25 INFO  : Context for processor 'microblaze_0' is selected.
+15:11:25 INFO  : System reset is completed.
+15:11:28 INFO  : 'after 3000' command is executed.
+15:11:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:11:28 INFO  : The application 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf' is downloaded to processor 'microblaze_0'.
+15:11:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}
+fpga -file C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf
+----------------End of Script----------------
+
+15:11:28 INFO  : Context for processor 'microblaze_0' is selected.
+15:11:29 INFO  : 'con' command is executed.
+15:11:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:11:29 INFO  : Launch script is exported to file 'C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\AXI4_LITE_I2C_PERIPH_system\_ide\scripts\systemdebugger_axi4_lite_i2c_periph_system_standalone.tcl'
+15:12:24 INFO  : Disconnected from the channel tcfchan#3.
+15:12:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:25 INFO  : Jtag cable 'Digilent Basys3 210183BB7AB8A' is selected.
+15:12:25 INFO  : 'jtag frequency' command is executed.
+15:12:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}' command is executed.
+15:12:26 INFO  : Device configured successfully with "C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit"
+15:12:26 INFO  : Context for processor 'microblaze_0' is selected.
+15:12:26 INFO  : Hardware design and registers information is loaded from 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa'.
+15:12:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:12:26 INFO  : Context for processor 'microblaze_0' is selected.
+15:12:26 INFO  : System reset is completed.
+15:12:29 INFO  : 'after 3000' command is executed.
+15:12:29 INFO  : Context for processor 'microblaze_0' is selected.
+15:12:30 INFO  : The application 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf' is downloaded to processor 'microblaze_0'.
+15:12:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}
+fpga -file C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf
+----------------End of Script----------------
+
+15:12:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:12:32 INFO  : 'con' command is executed.
+15:12:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:12:32 INFO  : Launch script is exported to file 'C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\AXI4_LITE_I2C_PERIPH_system\_ide\scripts\systemdebugger_axi4_lite_i2c_periph_system_standalone.tcl'
+15:19:47 INFO  : Disconnected from the channel tcfchan#4.
+15:19:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:19:48 INFO  : Jtag cable 'Digilent Basys3 210183BB7AB8A' is selected.
+15:19:48 INFO  : 'jtag frequency' command is executed.
+15:19:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}' command is executed.
+15:19:49 INFO  : Device configured successfully with "C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit"
+15:19:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:49 INFO  : Hardware design and registers information is loaded from 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa'.
+15:19:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:19:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:49 INFO  : System reset is completed.
+15:19:52 INFO  : 'after 3000' command is executed.
+15:19:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:52 INFO  : The application 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf' is downloaded to processor 'microblaze_0'.
+15:19:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}
+fpga -file C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf
+----------------End of Script----------------
+
+15:19:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:53 INFO  : 'con' command is executed.
+15:19:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:19:53 INFO  : Launch script is exported to file 'C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\AXI4_LITE_I2C_PERIPH_system\_ide\scripts\systemdebugger_axi4_lite_i2c_periph_system_standalone.tcl'
+15:21:33 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+15:21:42 INFO  : Disconnected from the channel tcfchan#5.
+15:21:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:42 INFO  : Jtag cable 'Digilent Basys3 210183BB7AB8A' is selected.
+15:21:42 INFO  : 'jtag frequency' command is executed.
+15:21:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}' command is executed.
+15:21:43 INFO  : Device configured successfully with "C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit"
+15:21:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:44 INFO  : Hardware design and registers information is loaded from 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa'.
+15:21:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:21:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:44 INFO  : System reset is completed.
+15:21:47 INFO  : 'after 3000' command is executed.
+15:21:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:47 INFO  : The application 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf' is downloaded to processor 'microblaze_0'.
+15:21:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}
+fpga -file C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf
+----------------End of Script----------------
+
+15:21:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:21:48 INFO  : 'con' command is executed.
+15:21:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:21:48 INFO  : Launch script is exported to file 'C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\AXI4_LITE_I2C_PERIPH_system\_ide\scripts\systemdebugger_axi4_lite_i2c_periph_system_standalone.tcl'
+15:22:33 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+15:22:55 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+15:23:01 INFO  : Disconnected from the channel tcfchan#6.
+15:23:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:02 INFO  : Jtag cable 'Digilent Basys3 210183BB7AB8A' is selected.
+15:23:02 INFO  : 'jtag frequency' command is executed.
+15:23:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}' command is executed.
+15:23:03 INFO  : Device configured successfully with "C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit"
+15:23:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:23:03 INFO  : Hardware design and registers information is loaded from 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa'.
+15:23:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:23:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:23:03 INFO  : System reset is completed.
+15:23:06 INFO  : 'after 3000' command is executed.
+15:23:06 INFO  : Context for processor 'microblaze_0' is selected.
+15:23:06 INFO  : The application 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf' is downloaded to processor 'microblaze_0'.
+15:23:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}
+fpga -file C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf
+----------------End of Script----------------
+
+15:23:07 INFO  : Context for processor 'microblaze_0' is selected.
+15:23:07 INFO  : 'con' command is executed.
+15:23:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:23:07 INFO  : Launch script is exported to file 'C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\AXI4_LITE_I2C_PERIPH_system\_ide\scripts\systemdebugger_axi4_lite_i2c_periph_system_standalone.tcl'
+15:31:52 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+15:32:08 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+15:33:02 INFO  : Disconnected from the channel tcfchan#7.
+15:33:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:02 INFO  : Jtag cable 'Digilent Basys3 210183BB7AB8A' is selected.
+15:33:02 INFO  : 'jtag frequency' command is executed.
+15:33:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}' command is executed.
+15:33:03 INFO  : Device configured successfully with "C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit"
+15:33:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:04 INFO  : Hardware design and registers information is loaded from 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa'.
+15:33:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:33:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:04 INFO  : System reset is completed.
+15:33:07 INFO  : 'after 3000' command is executed.
+15:33:07 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:07 INFO  : The application 'C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf' is downloaded to processor 'microblaze_0'.
+15:33:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7AB8A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7AB8A-0362d093-0"}
+fpga -file C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/_ide/bitstream/AXI4_LITE_I2C_PERIPH_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/hw/AXI4_LITE_I2C_PERIPH_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH/Debug/AXI4_LITE_I2C_PERIPH.elf
+----------------End of Script----------------
+
+15:33:07 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:07 INFO  : 'con' command is executed.
+15:33:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:33:07 INFO  : Launch script is exported to file 'C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\AXI4_LITE_I2C_PERIPH_system\_ide\scripts\systemdebugger_axi4_lite_i2c_periph_system_standalone.tcl'
+15:34:12 INFO  : Checking for BSP changes to sync application flags for project 'AXI4_LITE_I2C_PERIPH'...
+16:05:09 INFO  : Disconnected from the channel tcfchan#8.
+16:05:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\temp_xsdb_launch_script.tcl
+16:05:56 INFO  : XSCT server has started successfully.
+16:05:56 INFO  : plnx-install-location is set to ''
+16:05:56 INFO  : Successfully done setting XSCT server connection channel  
+16:05:56 INFO  : Successfully done setting workspace for the tool. 
+16:06:07 INFO  : Platform repository initialization has completed.
+16:06:07 INFO  : Registering command handlers for Vitis TCF services
+16:06:09 INFO  : Successfully done query RDI_DATADIR 
+16:06:54 INFO  : Hardware specification for platform project 'AXI4_LITE_I2C_PERIPH_wrapper' is updated.
+16:11:08 INFO  : Hardware specification for platform project 'AXI4_LITE_I2C_PERIPH_wrapper' is updated.
+16:21:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis\temp_xsdb_launch_script.tcl
+16:21:15 INFO  : XSCT server has started successfully.
+16:21:15 INFO  : Successfully done setting XSCT server connection channel  
+16:21:15 INFO  : plnx-install-location is set to ''
+16:21:15 INFO  : Successfully done setting workspace for the tool. 
+16:21:23 INFO  : Platform repository initialization has completed.
+16:21:24 INFO  : Successfully done query RDI_DATADIR 
+16:21:25 INFO  : Registering command handlers for Vitis TCF services

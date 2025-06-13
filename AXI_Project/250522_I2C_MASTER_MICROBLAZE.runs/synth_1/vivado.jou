@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 23 16:08:04 2025
+# Process ID: 31480
+# Current directory: C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/250522_I2C_MASTER_MICROBLAZE.runs/synth_1
+# Command line: vivado.exe -log AXI4_LITE_I2C_PERIPH_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI4_LITE_I2C_PERIPH_wrapper.tcl
+# Log file: C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/250522_I2C_MASTER_MICROBLAZE.runs/synth_1/AXI4_LITE_I2C_PERIPH_wrapper.vds
+# Journal file: C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/250522_I2C_MASTER_MICROBLAZE.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AXI4_LITE_I2C_PERIPH_wrapper.tcl -notrace

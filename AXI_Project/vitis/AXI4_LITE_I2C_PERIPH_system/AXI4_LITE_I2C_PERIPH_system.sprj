@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="AXI4_LITE_I2C_PERIPH_system" platform="C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/AXI4_LITE_I2C_PERIPH_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" sysConfig="AXI4_LITE_I2C_PERIPH_wrapper" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.619448683">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="AXI4_LITE_I2C_PERIPH" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.766026310">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="AXI4_LITE_I2C_PERIPH" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

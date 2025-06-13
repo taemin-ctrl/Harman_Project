@@ -1,0 +1,21 @@
+15:34:12 **** Incremental Build of configuration Debug for project AXI4_LITE_I2C_PERIPH ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/sw/AXI4_LITE_I2C_PERIPH_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXI4_LITE_I2C_PERIPH.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/sw/AXI4_LITE_I2C_PERIPH_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "AXI4_LITE_I2C_PERIPH.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI4_LITE_I2C_PERIPH.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AXI4_LITE_I2C_PERIPH.elf  |tee "AXI4_LITE_I2C_PERIPH.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2096	    268	   3108	   5472	   1560	AXI4_LITE_I2C_PERIPH.elf
+'Finished building: AXI4_LITE_I2C_PERIPH.elf.size'
+' '
+
+15:34:13 Build Finished (took 1s.530ms)
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis2"/>
+	<item key="scw_hwspec_file_selection" value="C:\fpga_harman\250522_I2C_MASTER_MICROBLAZE\vitis6"/>
+</section>

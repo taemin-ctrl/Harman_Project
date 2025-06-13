@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="asdf" location="C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis2/asdf" platform="C:/fpga_harman/250522_I2C_MASTER_MICROBLAZE/vitis2/AXI4_LITE_I2C_PERIPH_wrapper/export/AXI4_LITE_I2C_PERIPH_wrapper/AXI4_LITE_I2C_PERIPH_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="asdf_system" sysConfig="AXI4_LITE_I2C_PERIPH_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="17867999a54cba7c4b60b1e8f288b100">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1012518763">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1481071732" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
